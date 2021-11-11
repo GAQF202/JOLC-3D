@@ -1,0 +1,52 @@
+.menu-nav{
+    list-style: none;
+    top: 10px;
+    padding: 1px;
+    background: rgb(13, 151, 25);
+    width: 53%;
+    max-width: 1000px;
+    border-radius: 0px 0px 10px 10px;
+    margin: auto;
+}
+
+.li-link{
+    text-decoration: none;
+    color: rgb(206, 200, 189);
+}
+
+.menu-nav li {
+    text-decoration: none;
+    padding: 10px 50px;
+    text-align: center;
+    display: inline-block;
+}
+
+.div-arbol{
+    position: relative;
+    top: 40px;
+    left: 260px;
+	height: 500px;
+	width: 830px;
+	border: 3px solid rgb(68, 77, 72);
+	background: #cbcfcc;
+	overflow-y: scroll;
+}
+
+.div-bienvenida{
+    position: relative;
+    top: 60px;
+    left: 400px;
+    height: 300px;
+    width: 600px;
+    text-align: center;
+    border-radius: 30px;
+    background: rgb(106,104,104);
+    background: linear-gradient(35deg, rgba(106,104,104,1) 0%, rgba(143,255,107,1) 100%); 
+    /*background-color: #70ce23;*/
+}
+
+.div-bienvenida h1{
+    position: relative;
+    color: #f3f3f3;
+    top: 30px;
+}

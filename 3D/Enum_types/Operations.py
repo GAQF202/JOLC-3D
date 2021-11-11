@@ -1,0 +1,43 @@
+import enum
+
+class Operations(enum.Enum):
+    SUMA = 0
+    RESTA = 1
+    MULTIPLICACION = 2
+    DIVISION = 3
+    POTENCIA = 4
+    MODULO = 5
+    NEGADO = 6
+    #NATIVAS
+    UPPERCASE = 7
+    LOWERCASE = 8
+    LOGARITMO_BASE10 = 9
+    LOGARITMO_DISTINTA_BASE = 10
+    SENO = 11
+    COSENO = 12
+    TANGENTE = 13
+    RAIZ_CUADRADA = 14
+    PARSE = 15
+    TRUNC = 16
+    CONVERTTOFLOAT = 17
+    STRINGNATIVE = 18
+    TYPEOF = 19
+    PUSH = 20
+    POP = 21
+    LENGTH = 22
+    #RELACIONALES
+    MAYORQUE = 23
+    MENORQUE = 24
+    MAYORIGUAL = 25
+    MENORIGUAL = 26
+    DOBLEIGUAL = 27
+    NOIGUAL = 28
+    OR = 29
+    #LOGICAS
+    AND = 30
+    NOT = 31
+    #SENTENCIAS DE TRANSFERENCIA
+    RETURN = 32
+    BREAK = 33
+    CONTINUE = 34
+    ERROR = 35

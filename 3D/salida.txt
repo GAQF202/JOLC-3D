@@ -1,0 +1,974 @@
+package main 
+import (
+            "fmt"
+            
+        )
+var HEAP[1000000] float64;
+var STACK[780000] float64;
+var P float64;
+var H float64;
+var t0,t1,t2,t3,t4,t5,t6,t7,t8,t9,t10,t11,t12,t13,t14,t15,t16,t17,t18,t19,t20,t21,t22,t23,t24,t25,t26,t27,t28,t29,t30,t31,t32,t33,t34,t35,t36,t37,t38,t39,t40,t41,t42,t43,t44,t45,t46,t47,t48,t49,t50,t51,t52,t53,t54,t55,t56,t57,t58,t59,t60,t61,t62,t63,t64,t65,t66,t67,t68,t69,t70,t71,t72,t73,t74,t75,t76,t77,t78,t79,t80,t81,t82,t83,t84,t85,t86,t87,t88,t89,t90,t91,t92,t93,t94,t95,t96,t97,t98,t99,t100,t101,t102,t103,t104,t105,t106,t107,t108,t109,t110,t111,t112,t113,t114,t115,t116,t117,t118,t119,t120,t121,t122,t123,t124,t125,t126,t127,t128,t129,t130,t131,t132,t133,t134,t135,t136,t137,t138,t139,t140,t141,t142,t143,t144,t145,t146,t147,t148,t149,t150,t151,t152,t153,t154,t155,t156,t157,t158,t159,t160,t161,t162,t163,t164,t165,t166,t167,t168,t169,t170,t171,t172,t173,t174,t175,t176,t177,t178,t179,t180,t181,t182,t183,t184,t185,t186,t187,t188,t189,t190,t191,t192,t193,t194,t195,t196,t197 float64;
+
+func print_true(){ 
+    fmt.Printf("%c",84);
+    fmt.Printf("%c",114);
+    fmt.Printf("%c",117);
+    fmt.Printf("%c",101);
+    //fmt.Printf("%c",10);
+}
+
+
+func print_false(){   
+    fmt.Printf("%c",70);
+    fmt.Printf("%c",97);
+    fmt.Printf("%c",108);
+    fmt.Printf("%c",115);
+    fmt.Printf("%c",101);
+    //fmt.Printf("%c",10);
+}
+
+
+
+func string_elevation(){
+//Se obtiene la posicion exacta de la variable en el entorno
+t1 = P + 1;
+t0 = STACK [ int(t1)];
+t2 = P + 3;
+STACK[int(t2)] = t0;
+//Se obtiene la posicion exacta de la variable en el entorno
+t4 = P + 2;
+t3 = STACK [ int(t4)];
+t5 = t3 - 1;
+t6 = 1  ;
+t7 = P + 4;
+STACK[int(t7)] = t6;
+L0:
+if(t6 <= t5) { goto L1 ;} 
+goto L2;
+L1:
+//Se obtiene la posicion exacta de la variable en el entorno
+t9 = P + 3;
+t8 = STACK [ int(t9)];
+//Se obtiene la posicion exacta de la variable en el entorno
+t11 = P + 1;
+t10 = STACK [ int(t11)];
+t12 = H + 0;
+t13 = HEAP[int(t8)];
+t14 = HEAP[int(t10)];
+t15 = t13 + t14;
+t15 = t15 - 1;
+HEAP[int(H)] = t15;
+H = H + 1;
+t16 = HEAP[int(t8)];
+t17 = t8 + 1;
+t18 = t16 + t8;
+L3:
+if(t17 < t18) { goto L4 ;} 
+goto L5;
+L4:
+t19 = HEAP[int(t17)];
+HEAP[int(H)] = t19;
+H = H + 1;
+t17 = t17 + 1;
+goto L3;
+L5:
+t20 = HEAP[int(t10)];
+t21 = t10 + 1;
+t22 = t20 + t10;
+L6:
+if(t21 < t22) { goto L7 ;} 
+goto L8;
+L7:
+t23 = HEAP[int(t21)];
+HEAP[int(H)] = t23;
+H = H + 1;
+t21 = t21 + 1;
+goto L6;
+L8:
+t24 = P + 3;
+STACK[int(t24)] = t12;
+t6 = t6 + 1;
+STACK[int(t7)] = t6;
+goto L0;
+L2:
+//Se obtiene la posicion exacta de la variable en el entorno
+t26 = P + 3;
+t25 = STACK [ int(t26)];
+STACK[int(P)] = t25;
+}
+
+
+func jolc_print_array_integer(){
+t135 = P + 0;
+t139 = STACK [ int(t135)];
+t140 = P + 2;
+STACK[int(t140)] = t139;
+t137 = HEAP[int(t139)];
+t138 = 0 - 0.0003;
+if(t137 == t138) { goto L9 ;} 
+goto L10;
+L9:
+fmt.Printf("%c",int(91));
+t140 = P + 2;
+t139 = STACK [ int(t140)];
+t141 = t139 + 1;
+t135 = P + 1;
+STACK[int(t135)] = t141;
+t142 = HEAP[int(t141)];
+t143 = t142 + t141;
+L11:
+t135 = P + 1;
+t136 = STACK [ int(t135)];
+t136 = t136 + 1;
+STACK[int(t135)] = t136;
+t136 = STACK [ int(t135)];
+t140 = P + 2;
+t139 = STACK [ int(t140)];
+t141 = t139 + 1;
+t142 = HEAP[int(t141)];
+t143 = t142 + t141;
+if(t136 <= t143) { goto L12 ;} 
+goto L13;
+L12:
+t137 = HEAP[int(t136)];
+if(t137 == t138) { goto L14 ;} 
+goto L15;
+L14:
+t135 = P + 1;
+t136 = STACK [ int(t135)];
+t136 = t136 + 1;
+STACK[int(t135)] = t136;
+t136 = STACK [ int(t135)];
+t137 = HEAP[int(t136)];
+t135 = P + 3;
+t144 = t135 + 0;
+STACK[int(t144)] = t137;
+P = P + 3;
+jolc_print_array_integer();
+P = P - 3;
+if(t136 != t143) { goto L16 ;} 
+goto L18;
+L16:
+if(t136 != t141) { goto L17 ;} 
+goto L18;
+L17:
+fmt.Printf("%c",int(44));
+L18:
+goto L11;
+L15:
+t135 = P + 1;
+t136 = STACK [ int(t135)];
+t136 = t136 + 1;
+STACK[int(t135)] = t136;
+t136 = STACK [ int(t135)];
+t137 = HEAP[int(t136)];
+fmt.Printf("%d",int(t137));
+if(t136 != t143) { goto L19 ;} 
+goto L21;
+L19:
+if(t136 != t141) { goto L20 ;} 
+goto L21;
+L20:
+fmt.Printf("%c",int(44));
+L21:
+goto L11;
+L10:
+t135 = P + 1;
+t136 = STACK [ int(t135)];
+t136 = t136 + 1;
+STACK[int(t135)] = t136;
+t136 = STACK [ int(t135)];
+t137 = HEAP[int(t136)];
+fmt.Printf("%d",int(t137));
+L13:
+fmt.Printf("%c",int(93));
+}
+func jolc_print_array_float(){
+t145 = P + 0;
+t149 = STACK [ int(t145)];
+t150 = P + 2;
+STACK[int(t150)] = t149;
+t147 = HEAP[int(t149)];
+t148 = 0 - 0.0003;
+if(t147 == t148) { goto L22 ;} 
+goto L23;
+L22:
+fmt.Printf("%c",int(91));
+t150 = P + 2;
+t149 = STACK [ int(t150)];
+t151 = t149 + 1;
+t145 = P + 1;
+STACK[int(t145)] = t151;
+t152 = HEAP[int(t151)];
+t153 = t152 + t151;
+L24:
+t145 = P + 1;
+t146 = STACK [ int(t145)];
+t146 = t146 + 1;
+STACK[int(t145)] = t146;
+t146 = STACK [ int(t145)];
+t150 = P + 2;
+t149 = STACK [ int(t150)];
+t151 = t149 + 1;
+t152 = HEAP[int(t151)];
+t153 = t152 + t151;
+if(t146 <= t153) { goto L25 ;} 
+goto L26;
+L25:
+t147 = HEAP[int(t146)];
+if(t147 == t148) { goto L27 ;} 
+goto L28;
+L27:
+t145 = P + 1;
+t146 = STACK [ int(t145)];
+t146 = t146 + 1;
+STACK[int(t145)] = t146;
+t146 = STACK [ int(t145)];
+t147 = HEAP[int(t146)];
+t145 = P + 3;
+t154 = t145 + 0;
+STACK[int(t154)] = t147;
+P = P + 3;
+jolc_print_array_float();
+P = P - 3;
+if(t146 != t153) { goto L29 ;} 
+goto L31;
+L29:
+if(t146 != t151) { goto L30 ;} 
+goto L31;
+L30:
+fmt.Printf("%c",int(44));
+L31:
+goto L24;
+L28:
+t145 = P + 1;
+t146 = STACK [ int(t145)];
+t146 = t146 + 1;
+STACK[int(t145)] = t146;
+t146 = STACK [ int(t145)];
+t147 = HEAP[int(t146)];
+fmt.Printf("%f",float64(t147));
+if(t146 != t153) { goto L32 ;} 
+goto L34;
+L32:
+if(t146 != t151) { goto L33 ;} 
+goto L34;
+L33:
+fmt.Printf("%c",int(44));
+L34:
+goto L24;
+L23:
+t145 = P + 1;
+t146 = STACK [ int(t145)];
+t146 = t146 + 1;
+STACK[int(t145)] = t146;
+t146 = STACK [ int(t145)];
+t147 = HEAP[int(t146)];
+fmt.Printf("%f",float64(t147));
+L26:
+fmt.Printf("%c",int(93));
+}
+func jolc_print_array_bool(){
+t155 = P + 0;
+t159 = STACK [ int(t155)];
+t160 = P + 2;
+STACK[int(t160)] = t159;
+t157 = HEAP[int(t159)];
+t158 = 0 - 0.0003;
+if(t157 == t158) { goto L35 ;} 
+goto L36;
+L35:
+fmt.Printf("%c",int(91));
+t160 = P + 2;
+t159 = STACK [ int(t160)];
+t161 = t159 + 1;
+t155 = P + 1;
+STACK[int(t155)] = t161;
+t162 = HEAP[int(t161)];
+t163 = t162 + t161;
+L37:
+t155 = P + 1;
+t156 = STACK [ int(t155)];
+t156 = t156 + 1;
+STACK[int(t155)] = t156;
+t156 = STACK [ int(t155)];
+t160 = P + 2;
+t159 = STACK [ int(t160)];
+t161 = t159 + 1;
+t162 = HEAP[int(t161)];
+t163 = t162 + t161;
+if(t156 <= t163) { goto L38 ;} 
+goto L39;
+L38:
+t157 = HEAP[int(t156)];
+if(t157 == t158) { goto L40 ;} 
+goto L41;
+L40:
+t155 = P + 1;
+t156 = STACK [ int(t155)];
+t156 = t156 + 1;
+STACK[int(t155)] = t156;
+t156 = STACK [ int(t155)];
+t157 = HEAP[int(t156)];
+t155 = P + 3;
+t164 = t155 + 0;
+STACK[int(t164)] = t157;
+P = P + 3;
+jolc_print_array_bool();
+P = P - 3;
+if(t156 != t163) { goto L42 ;} 
+goto L44;
+L42:
+if(t156 != t161) { goto L43 ;} 
+goto L44;
+L43:
+fmt.Printf("%c",int(44));
+L44:
+goto L37;
+L41:
+t155 = P + 1;
+t156 = STACK [ int(t155)];
+t156 = t156 + 1;
+STACK[int(t155)] = t156;
+t156 = STACK [ int(t155)];
+t157 = HEAP[int(t156)];
+if(t157 == 1) { goto L45 ;} 
+goto L46;
+L45:
+print_true();
+goto L47;
+L46:
+print_false();
+L47:
+if(t156 != t163) { goto L48 ;} 
+goto L50;
+L48:
+if(t156 != t161) { goto L49 ;} 
+goto L50;
+L49:
+fmt.Printf("%c",int(44));
+L50:
+goto L37;
+L36:
+t155 = P + 1;
+t156 = STACK [ int(t155)];
+t156 = t156 + 1;
+STACK[int(t155)] = t156;
+t156 = STACK [ int(t155)];
+t157 = HEAP[int(t156)];
+if(t157 == 1) { goto L51 ;} 
+goto L52;
+L51:
+print_true();
+goto L53;
+L52:
+print_false();
+L53:
+L39:
+fmt.Printf("%c",int(93));
+}
+func jolc_print_array_string(){
+t165 = P + 0;
+t169 = STACK [ int(t165)];
+t170 = P + 2;
+STACK[int(t170)] = t169;
+t167 = HEAP[int(t169)];
+t168 = 0 - 0.0003;
+if(t167 == t168) { goto L54 ;} 
+goto L55;
+L54:
+fmt.Printf("%c",int(91));
+t170 = P + 2;
+t169 = STACK [ int(t170)];
+t171 = t169 + 1;
+t165 = P + 1;
+STACK[int(t165)] = t171;
+t172 = HEAP[int(t171)];
+t173 = t172 + t171;
+L56:
+t165 = P + 1;
+t166 = STACK [ int(t165)];
+t166 = t166 + 1;
+STACK[int(t165)] = t166;
+t166 = STACK [ int(t165)];
+t170 = P + 2;
+t169 = STACK [ int(t170)];
+t171 = t169 + 1;
+t172 = HEAP[int(t171)];
+t173 = t172 + t171;
+if(t166 <= t173) { goto L57 ;} 
+goto L58;
+L57:
+t167 = HEAP[int(t166)];
+if(t167 == t168) { goto L59 ;} 
+goto L60;
+L59:
+t165 = P + 1;
+t166 = STACK [ int(t165)];
+t166 = t166 + 1;
+STACK[int(t165)] = t166;
+t166 = STACK [ int(t165)];
+t167 = HEAP[int(t166)];
+t165 = P + 3;
+t174 = t165 + 0;
+STACK[int(t174)] = t167;
+P = P + 3;
+jolc_print_array_string();
+P = P - 3;
+if(t166 != t173) { goto L61 ;} 
+goto L63;
+L61:
+if(t166 != t171) { goto L62 ;} 
+goto L63;
+L62:
+fmt.Printf("%c",int(44));
+L63:
+goto L56;
+L60:
+t165 = P + 1;
+t166 = STACK [ int(t165)];
+t166 = t166 + 1;
+STACK[int(t165)] = t166;
+t166 = STACK [ int(t165)];
+t167 = HEAP[int(t166)];
+t175 = HEAP[int(t167)];
+t176 = t167 + 1;
+t177 = t175 + t167;
+L64:
+if(t176 < t177) { goto L65 ;} 
+goto L66;
+L65:
+t178 = HEAP[int(t176)];
+fmt.Printf("%c",int(t178));
+t176 = t176 + 1;
+goto L64;
+L66:
+if(t166 != t173) { goto L67 ;} 
+goto L69;
+L67:
+if(t166 != t171) { goto L68 ;} 
+goto L69;
+L68:
+fmt.Printf("%c",int(44));
+L69:
+goto L56;
+L55:
+t165 = P + 1;
+t166 = STACK [ int(t165)];
+t166 = t166 + 1;
+STACK[int(t165)] = t166;
+t166 = STACK [ int(t165)];
+t167 = HEAP[int(t166)];
+t179 = HEAP[int(t167)];
+t180 = t167 + 1;
+t181 = t179 + t167;
+L70:
+if(t180 < t181) { goto L71 ;} 
+goto L72;
+L71:
+t182 = HEAP[int(t180)];
+fmt.Printf("%c",int(t182));
+t180 = t180 + 1;
+goto L70;
+L72:
+L58:
+fmt.Printf("%c",int(93));
+}
+func jolc_print_string(){
+t185 = P + 0;
+t184 = STACK [ int(t185)];
+t183 = HEAP[int(t184)];
+t186 = t184 + 1;
+t187 = t183 + t184;
+L73:
+if(t186 < t187) { goto L74 ;} 
+goto L75;
+L74:
+t186 = t186 + 1;
+t188 = HEAP[int(t186)];
+fmt.Printf("%c",int(t188));
+goto L73;
+L75:
+}
+func jolc_print_integer(){
+t191 = P + 0;
+t190 = STACK [ int(t191)];
+fmt.Printf("%d",int(t190));
+}
+func jolc_print_float(){
+t194 = P + 0;
+t193 = STACK [ int(t194)];
+fmt.Printf("%f",float64(t193));
+}
+func jolc_print_bool(){
+t197 = P + 0;
+t196 = STACK [ int(t197)];
+if(t196 == 1) { goto L76 ;} 
+goto L77;
+L76:
+print_true();
+goto L78;
+L77:
+print_false();
+L78:
+}
+
+func main(){
+t28 = H  ;
+t29 = 0 - 0.0003;
+HEAP[int(H)] = t29;
+H = H + 1;
+t30 = 0 - 0.0001;
+t31 = t28 + 2;
+HEAP[int(H)] = 4;
+H = H + 1;
+H = H + 1;
+H = H + 1;
+H = H + 1;
+H = H + 1;
+HEAP[int(t31)] = t30;
+t31 = t31 + 1;
+HEAP[int(t31)] = 40;
+t31 = t31 + 1;
+HEAP[int(t31)] = t30;
+t31 = t31 + 1;
+HEAP[int(t31)] = 3;
+t31 = t31 + 1;
+t32 = P + 0;
+STACK[int(t32)] = t28;
+t33 = H  ;
+t34 = 0 - 0.0003;
+HEAP[int(H)] = t34;
+H = H + 1;
+t35 = 0 - 0.0001;
+t36 = t33 + 2;
+HEAP[int(H)] = 2;
+H = H + 1;
+H = H + 1;
+H = H + 1;
+HEAP[int(t36)] = t35;
+t36 = t36 + 1;
+HEAP[int(t36)] = 3;
+t36 = t36 + 1;
+t37 = P + 1;
+STACK[int(t37)] = t33;
+t38 = H  ;
+t39 = 0 - 0.0003;
+HEAP[int(H)] = t39;
+H = H + 1;
+t40 = 0 - 0.0001;
+t41 = t38 + 2;
+HEAP[int(H)] = 2;
+H = H + 1;
+H = H + 1;
+H = H + 1;
+t42 = H + 0;
+HEAP[int(H)] = 5;
+H = H + 1;
+HEAP[int(H)] = 104;
+H = H + 1;
+HEAP[int(H)] = 111;
+H = H + 1;
+HEAP[int(H)] = 108;
+H = H + 1;
+HEAP[int(H)] = 97;
+H = H + 1;
+HEAP[int(t41)] = t40;
+t41 = t41 + 1;
+HEAP[int(t41)] = t42;
+t41 = t41 + 1;
+t43 = P + 2;
+STACK[int(t43)] = t38;
+t44 = H  ;
+t45 = 0 - 0.0003;
+HEAP[int(H)] = t45;
+H = H + 1;
+t46 = 0 - 0.0001;
+t47 = t44 + 2;
+HEAP[int(H)] = 2;
+H = H + 1;
+H = H + 1;
+H = H + 1;
+t48 = 1  ;
+HEAP[int(t47)] = t46;
+t47 = t47 + 1;
+HEAP[int(t47)] = t48;
+t47 = t47 + 1;
+t49 = P + 3;
+STACK[int(t49)] = t44;
+t55 = 0 - 0.0003;
+t50 = STACK [ int(0)];
+t52 = HEAP[int(t50)];
+t53 = t50 + 1;
+t51 = HEAP[int(t53)];
+t51 = t51 / 2;
+if(1 <= t51) { goto L3 ;} 
+goto L1;
+L3:
+t56 = 1 * 2;
+t50 = t50 + t56;
+t52 = HEAP[int(t50)];
+t53 = t50 + 1;
+//------------------------------------
+if(t52 == t55) { goto L4 ;} 
+goto L5;
+L4:
+t54 = HEAP[int(t53)];
+goto L2;
+L5:
+t54 = t50  ;
+goto L2;
+L1:
+fmt.Printf("%c",79);
+fmt.Printf("%c",82);
+goto L2;
+L2:
+t62 = 0 - 0.0003;
+t57 = STACK [ int(1)];
+t59 = HEAP[int(t57)];
+t60 = t57 + 1;
+t58 = HEAP[int(t60)];
+t58 = t58 / 2;
+if(1 <= t58) { goto L9 ;} 
+goto L7;
+L9:
+t63 = 1 * 2;
+t57 = t57 + t63;
+t59 = HEAP[int(t57)];
+t60 = t57 + 1;
+//------------------------------------
+if(t59 == t62) { goto L10 ;} 
+goto L11;
+L10:
+t61 = HEAP[int(t60)];
+goto L8;
+L11:
+t61 = t57  ;
+goto L8;
+L7:
+fmt.Printf("%c",79);
+fmt.Printf("%c",82);
+goto L8;
+L8:
+t65 = t54 + 1;
+t54 = HEAP[int(t65)];
+t66 = t61 + 1;
+t61 = HEAP[int(t66)];
+if(t54 > t61) { goto L12 ;} 
+goto L13;
+L12:
+t64 = 1  ;
+goto L14;
+L13:
+t64 = 0  ;
+L14:
+if(t64 == 1) { goto L15 ;} 
+goto L16;
+L15:
+print_true();
+goto L17;
+L16:
+print_false();
+L17:
+fmt.Printf("%c",10);
+t72 = 0 - 0.0003;
+t67 = STACK [ int(0)];
+t69 = HEAP[int(t67)];
+t70 = t67 + 1;
+t68 = HEAP[int(t70)];
+t68 = t68 / 2;
+if(1 <= t68) { goto L21 ;} 
+goto L19;
+L21:
+t73 = 1 * 2;
+t67 = t67 + t73;
+t69 = HEAP[int(t67)];
+t70 = t67 + 1;
+//------------------------------------
+if(t69 == t72) { goto L22 ;} 
+goto L23;
+L22:
+t71 = HEAP[int(t70)];
+goto L20;
+L23:
+t71 = t67  ;
+goto L20;
+L19:
+fmt.Printf("%c",79);
+fmt.Printf("%c",82);
+goto L20;
+L20:
+t79 = 0 - 0.0003;
+t74 = STACK [ int(1)];
+t76 = HEAP[int(t74)];
+t77 = t74 + 1;
+t75 = HEAP[int(t77)];
+t75 = t75 / 2;
+if(1 <= t75) { goto L27 ;} 
+goto L25;
+L27:
+t80 = 1 * 2;
+t74 = t74 + t80;
+t76 = HEAP[int(t74)];
+t77 = t74 + 1;
+//------------------------------------
+if(t76 == t79) { goto L28 ;} 
+goto L29;
+L28:
+t78 = HEAP[int(t77)];
+goto L26;
+L29:
+t78 = t74  ;
+goto L26;
+L25:
+fmt.Printf("%c",79);
+fmt.Printf("%c",82);
+goto L26;
+L26:
+t82 = t71 + 1;
+t71 = HEAP[int(t82)];
+t83 = t78 + 1;
+t78 = HEAP[int(t83)];
+if(t71 >= t78) { goto L30 ;} 
+goto L31;
+L30:
+t81 = 1  ;
+goto L32;
+L31:
+t81 = 0  ;
+L32:
+if(t81 == 1) { goto L33 ;} 
+goto L34;
+L33:
+print_true();
+goto L35;
+L34:
+print_false();
+L35:
+fmt.Printf("%c",10);
+t89 = 0 - 0.0003;
+t84 = STACK [ int(0)];
+t86 = HEAP[int(t84)];
+t87 = t84 + 1;
+t85 = HEAP[int(t87)];
+t85 = t85 / 2;
+if(1 <= t85) { goto L39 ;} 
+goto L37;
+L39:
+t90 = 1 * 2;
+t84 = t84 + t90;
+t86 = HEAP[int(t84)];
+t87 = t84 + 1;
+//------------------------------------
+if(t86 == t89) { goto L40 ;} 
+goto L41;
+L40:
+t88 = HEAP[int(t87)];
+goto L38;
+L41:
+t88 = t84  ;
+goto L38;
+L37:
+fmt.Printf("%c",79);
+fmt.Printf("%c",82);
+goto L38;
+L38:
+t96 = 0 - 0.0003;
+t91 = STACK [ int(1)];
+t93 = HEAP[int(t91)];
+t94 = t91 + 1;
+t92 = HEAP[int(t94)];
+t92 = t92 / 2;
+if(1 <= t92) { goto L45 ;} 
+goto L43;
+L45:
+t97 = 1 * 2;
+t91 = t91 + t97;
+t93 = HEAP[int(t91)];
+t94 = t91 + 1;
+//------------------------------------
+if(t93 == t96) { goto L46 ;} 
+goto L47;
+L46:
+t95 = HEAP[int(t94)];
+goto L44;
+L47:
+t95 = t91  ;
+goto L44;
+L43:
+fmt.Printf("%c",79);
+fmt.Printf("%c",82);
+goto L44;
+L44:
+t99 = t88 + 1;
+t88 = HEAP[int(t99)];
+t100 = t95 + 1;
+t95 = HEAP[int(t100)];
+if(t88 < t95) { goto L48 ;} 
+goto L49;
+L48:
+t98 = 1  ;
+goto L50;
+L49:
+t98 = 0  ;
+L50:
+if(t98 == 1) { goto L51 ;} 
+goto L52;
+L51:
+print_true();
+goto L53;
+L52:
+print_false();
+L53:
+fmt.Printf("%c",10);
+t106 = 0 - 0.0003;
+t101 = STACK [ int(0)];
+t103 = HEAP[int(t101)];
+t104 = t101 + 1;
+t102 = HEAP[int(t104)];
+t102 = t102 / 2;
+if(1 <= t102) { goto L57 ;} 
+goto L55;
+L57:
+t107 = 1 * 2;
+t101 = t101 + t107;
+t103 = HEAP[int(t101)];
+t104 = t101 + 1;
+//------------------------------------
+if(t103 == t106) { goto L58 ;} 
+goto L59;
+L58:
+t105 = HEAP[int(t104)];
+goto L56;
+L59:
+t105 = t101  ;
+goto L56;
+L55:
+fmt.Printf("%c",79);
+fmt.Printf("%c",82);
+goto L56;
+L56:
+t113 = 0 - 0.0003;
+t108 = STACK [ int(1)];
+t110 = HEAP[int(t108)];
+t111 = t108 + 1;
+t109 = HEAP[int(t111)];
+t109 = t109 / 2;
+if(1 <= t109) { goto L63 ;} 
+goto L61;
+L63:
+t114 = 1 * 2;
+t108 = t108 + t114;
+t110 = HEAP[int(t108)];
+t111 = t108 + 1;
+//------------------------------------
+if(t110 == t113) { goto L64 ;} 
+goto L65;
+L64:
+t112 = HEAP[int(t111)];
+goto L62;
+L65:
+t112 = t108  ;
+goto L62;
+L61:
+fmt.Printf("%c",79);
+fmt.Printf("%c",82);
+goto L62;
+L62:
+t116 = t105 + 1;
+t105 = HEAP[int(t116)];
+t117 = t112 + 1;
+t112 = HEAP[int(t117)];
+if(t105 <= t112) { goto L66 ;} 
+goto L67;
+L66:
+t115 = 1  ;
+goto L68;
+L67:
+t115 = 0  ;
+L68:
+if(t115 == 1) { goto L69 ;} 
+goto L70;
+L69:
+print_true();
+goto L71;
+L70:
+print_false();
+L71:
+fmt.Printf("%c",10);
+t123 = 0 - 0.0003;
+t118 = STACK [ int(0)];
+t120 = HEAP[int(t118)];
+t121 = t118 + 1;
+t119 = HEAP[int(t121)];
+t119 = t119 / 2;
+if(1 <= t119) { goto L75 ;} 
+goto L73;
+L75:
+t124 = 1 * 2;
+t118 = t118 + t124;
+t120 = HEAP[int(t118)];
+t121 = t118 + 1;
+//------------------------------------
+if(t120 == t123) { goto L76 ;} 
+goto L77;
+L76:
+t122 = HEAP[int(t121)];
+goto L74;
+L77:
+t122 = t118  ;
+goto L74;
+L73:
+fmt.Printf("%c",79);
+fmt.Printf("%c",82);
+goto L74;
+L74:
+t130 = 0 - 0.0003;
+t125 = STACK [ int(1)];
+t127 = HEAP[int(t125)];
+t128 = t125 + 1;
+t126 = HEAP[int(t128)];
+t126 = t126 / 2;
+if(1 <= t126) { goto L81 ;} 
+goto L79;
+L81:
+t131 = 1 * 2;
+t125 = t125 + t131;
+t127 = HEAP[int(t125)];
+t128 = t125 + 1;
+//------------------------------------
+if(t127 == t130) { goto L82 ;} 
+goto L83;
+L82:
+t129 = HEAP[int(t128)];
+goto L80;
+L83:
+t129 = t125  ;
+goto L80;
+L79:
+fmt.Printf("%c",79);
+fmt.Printf("%c",82);
+goto L80;
+L80:
+t133 = t122 + 1;
+t122 = HEAP[int(t133)];
+t134 = t129 + 1;
+t129 = HEAP[int(t134)];
+if(t122 != t129) { goto L84 ;} 
+goto L85;
+L84:
+t132 = 1  ;
+goto L86;
+L85:
+t132 = 0  ;
+L86:
+if(t132 == 1) { goto L87 ;} 
+goto L88;
+L87:
+print_true();
+goto L89;
+L88:
+print_false();
+L89:
+fmt.Printf("%c",10);
+}
